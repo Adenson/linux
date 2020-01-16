@@ -3,7 +3,7 @@
 int main()
 {
    //char *getenv(const char *name)
-   //通过环境变量名称获取内容
+   //通过环境变量名称然后获取内容
    char* ptr = getenv("MYSET");
    if(ptr == NULL)
    {
