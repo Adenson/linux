@@ -14,7 +14,8 @@
 int main()
 {
    char *file = "./test.fifo";
-   int ret = mkfifo(file,777);//创建一个管道文件
+   int ret = mkfifo(file,777);
+   //创建一个管道文件
    if(ret < 0)
    {
       if(errno != EEXIST)
