@@ -11,6 +11,7 @@ class single
       return &data;
     }
 };
+
 template <class T>
 T single<T>::data = 123;
 int main()
