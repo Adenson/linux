@@ -14,8 +14,9 @@ int main(int argc, char* argv[])
 
   UdpSocket sock;
   CHECK_RET(sock.Socket());
-  //CHECK_RET(sock.Bind(ip,port));//客户端并不推荐手动绑定地址信息，让操作系统自己选择合适的地址信息，尽最大的可能避免冲突的概率
-  
+  //CHECK_RET(sock.Bind(ip,port));
+  //客户端并不推荐手动绑定地址信息，让操作系统自己选择合适的地址信息，尽最大的可能避免冲突的概率
+  //如果绑定了客户端地址信息，就会导致客户端代码不能运行多次，也就是不会启动多个客户端，所以并不推荐。
   struct sockaddr_in srv_addr;
   srv_addr.sin_family = AF_INET;
   srv_addr.sin_port = htons(port);
