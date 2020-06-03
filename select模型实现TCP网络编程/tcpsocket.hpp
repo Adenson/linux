@@ -1,6 +1,4 @@
-
-#ifndef __M_TCP_H__
-#define __M_TCP_H__
+#pragma once
 #include <iostream>
 #include <string>
 #include <stdio.h>
@@ -146,4 +144,3 @@ class TcpSocket
             return true;
         }
 };
-#endif
