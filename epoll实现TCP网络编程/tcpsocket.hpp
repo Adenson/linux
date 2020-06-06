@@ -1,11 +1,3 @@
-/*=============================================================== 
-*   Copyright (C) . All rights reserved.")
-*   文件名称： 
-*   创 建 者：zhang
-*   创建日期：
-*   描    述：封装一个TcpSocket类;
-*             向外提供简单的接口能够实现网络通信编程
-================================================================*/
 #include <cstdio>//printf
 #include <string>//std::string
 #include <unistd.h>//close
