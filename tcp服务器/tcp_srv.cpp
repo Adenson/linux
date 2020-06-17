@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
       continue;//不能直接返回，应为还有其他的客户端
     }
     //cli_sock用于与指定的客户端进行通信
-    //lst_sock只用于获取新连接
+    //lst_sock监听套接字只用于获取新连接
     std::cout << "new connect:" << cli_ip << ":" << cli_port << std::endl;
     std::string buf;
     bool ret = cli_sock.Recv(buf);
